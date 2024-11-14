@@ -55,6 +55,9 @@ const registerUser = asyncHandler(async (req, res) => {
     res.status(400);
     throw new Error('Invalid user data');
   }
+
+  console.log("User data before save:", user);
+
 });
 
 // @desc    Logout user / clear cookie
