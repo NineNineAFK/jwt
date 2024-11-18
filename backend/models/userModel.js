@@ -16,6 +16,15 @@ const userSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    googleId: {
+      type: String,
+      unique: true,
+      sparse: true,
+  },
+  photo:{
+      type:String,
+
+  },
    // uid: { type: String, unique: true, required: true },
   },
   {
