@@ -7,7 +7,7 @@ import cookieParser from 'cookie-parser';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 import userRoutes from './routes/userRoutes.js';
 
-import { restrictToLoggedInUserOnly } from("./middlewares/auth");
+import { restrictToLoggedInUserOnly } from './middlewares/auth';
 
 const port = process.env.PORT || 5000;
 
